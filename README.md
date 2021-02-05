@@ -1,31 +1,27 @@
 # HackerRank-Day-18-Queues-and-Stacks
+  
 
-
-
-public class Solution {
-    // Write your code here.
-    LinkedList<Character> queue = new LinkedList<Character>();  
-    Stack<Character> stack = new Stack<Character>();  // specify the stack type with character
+     public class Solution {
     
-
-     void pushCharacter(char ch){ 
+    LinkedList<Character> queue = new LinkedList<Character>();
+    Stack<Character> stack = new Stack<Character>();
+    
+    void pushCharacter(char ch){  // inserting values to stack
             stack.push(ch);
                        
      }
-      void enqueueCharacter(char ch){
+      void enqueueCharacter(char ch){   //inserting values to queue
           queue.add(ch);
           
       }
       
-      char popCharacter() { 
-          char temp;
-          temp = stack.pop();
-          return temp;
+      char popCharacter() {    // removing  values from stack
+          return stack.pop();
+           
       }
-      char dequeueCharacter(){
-           char temp;
-          temp = queue.remove();
-          return temp;
+      char dequeueCharacter(){  //removing  values from queue
+           return queue.remove();
+           
       } 
     
     
